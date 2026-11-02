@@ -1,0 +1,1013 @@
+[
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 2,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "unsupported_schema",
+    "name": "unknown_major"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": true,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "unsupported_schema",
+    "name": "boolean_version"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "camera.health",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "unsupported_schema",
+    "name": "deferred_health"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "camera.gap",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "unsupported_schema",
+    "name": "deferred_gap"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "missing_time"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "rtsp_url": "forbidden-extra-field",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "extra_url"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "password": "not-a-real-secret",
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "extra_credential"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900",
+      "synthetic": true
+    },
+    "expected_error": "invalid_schema",
+    "name": "synthetic_wire_field"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion",
+        "label": "forbidden"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "extra_detector_field"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet",
+        "trusted": true
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "extra_observation_field"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "missing_freshness"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "not-a-uuid",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "bad_uuid"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-0000-0000-000000000000",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "nil_uuid"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "AAAAAAAA-0000-4000-8000-000000000001"
+    },
+    "expected_error": "invalid_schema",
+    "name": "uppercase_uuid"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera/a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "camera_not_id"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "camera_too_long"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "agent-\u00e9",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "producer_unicode"
+  },
+  {
+    "event": {
+      "assignment_generation": 0,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "generation_zero"
+  },
+  {
+    "event": {
+      "assignment_generation": true,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "generation_bool"
+  },
+  {
+    "event": {
+      "assignment_generation": 9007199254740992,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "generation_overflow"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 0,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "sequence_zero"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": -1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "sequence_negative"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": "1",
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "sequence_string"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": true,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "sequence_boolean"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 9007199254740991,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "sequence_exhausted_sentinel"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": 1.5,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_json",
+    "name": "source_sequence_float"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "source_id_unbounded"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-02-30T00:00:00Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "invalid_calendar"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:00+00:00",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "non_utc"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": "2026-10-15T00:00:60Z",
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "leap_second"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:00.1234567Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "too_many_fraction_digits"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "vehicle"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "bad_kind"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "off"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "bad_state"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "live",
+        "semantics": "heartbeat",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "bad_semantics"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "unknown",
+        "freshness": "fresh",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "bad_freshness"
+  },
+  {
+    "event": {
+      "assignment_generation": 1,
+      "camera_id": "camera-demo-a",
+      "detector": {
+        "id": "motion-main",
+        "kind": "motion"
+      },
+      "event_id": "00000000-0000-4000-8000-000000000014",
+      "event_type": "detector.observation",
+      "observation": {
+        "clock_quality": "good",
+        "freshness": "live",
+        "semantics": "transition",
+        "state": "quiet"
+      },
+      "occurred_at": null,
+      "producer_id": "synthetic-agent",
+      "received_at": "2026-10-15T00:00:14Z",
+      "schema_version": 1,
+      "sequence": 1,
+      "source_event_id": null,
+      "source_sequence": null,
+      "source_session_id": "00000000-0000-4000-8000-000000000900"
+    },
+    "expected_error": "invalid_schema",
+    "name": "bad_clock"
+  }
+]

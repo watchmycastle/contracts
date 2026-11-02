@@ -1,0 +1,297 @@
+{
+  "cases": [
+    {
+      "authority_mutation": false,
+      "code": "unauthenticated",
+      "mutation": "Remove Authorization",
+      "name": "missing_auth",
+      "status": 401
+    },
+    {
+      "authority_mutation": false,
+      "code": "unauthenticated",
+      "mutation": "Authorization: Bearer slice2-dummy-unknown",
+      "name": "wrong_auth",
+      "status": 401
+    },
+    {
+      "authority_mutation": false,
+      "code": "unauthenticated",
+      "mutation": "Repeat correct Authorization twice",
+      "name": "duplicate_auth",
+      "status": 401
+    },
+    {
+      "authority_mutation": false,
+      "code": "unauthorized",
+      "mutation": "Token A, schema-valid camera B envelope",
+      "name": "wrong_camera",
+      "status": 403
+    },
+    {
+      "authority_mutation": false,
+      "code": "unauthorized",
+      "mutation": "Token A, producer-b in body; X-Producer-ID: producer-b",
+      "name": "forged_producer",
+      "status": 403
+    },
+    {
+      "authority_mutation": false,
+      "code": "fenced",
+      "mutation": "Token A/camera A, generation 2",
+      "name": "fenced",
+      "status": 403
+    },
+    {
+      "authority_mutation": false,
+      "code": "unauthenticated",
+      "mutation": "Remove Authorization; body {",
+      "name": "missing_auth_bad_json",
+      "status": 401
+    },
+    {
+      "authority_mutation": false,
+      "code": "length_required",
+      "mutation": "Remove Content-Length",
+      "name": "missing_length",
+      "status": 411
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Repeat same Content-Length",
+      "name": "duplicate_length",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Content-Length: -1",
+      "name": "negative_length",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Content-Length: 0",
+      "name": "zero_length",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "oversized",
+      "mutation": "Content-Length: 65537",
+      "name": "oversized_length",
+      "status": 413
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Transfer-Encoding: chunked",
+      "name": "chunked",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Expect: 100-continue",
+      "name": "expect",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Content-Encoding: gzip",
+      "name": "compressed",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "unsupported_media_type",
+      "mutation": "Remove Content-Type",
+      "name": "missing_type",
+      "status": 415
+    },
+    {
+      "authority_mutation": false,
+      "code": "unsupported_media_type",
+      "mutation": "Content-Type: application/json; charset=utf-8",
+      "name": "parameterized_type",
+      "status": 415
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Host: localhost:12345",
+      "name": "invalid_host",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Repeat correct Host twice",
+      "name": "duplicate_host",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "not_found",
+      "mutation": "POST /v1/observations?x=1",
+      "name": "query_target",
+      "status": 404
+    },
+    {
+      "authority_mutation": false,
+      "code": "not_found",
+      "mutation": "POST http://127.0.0.1:12345/v1/observations",
+      "name": "absolute_target",
+      "status": 404
+    },
+    {
+      "authority_mutation": false,
+      "code": "method_not_allowed",
+      "mutation": "GET /v1/observations",
+      "name": "get_ingest",
+      "status": 405
+    },
+    {
+      "authority_mutation": false,
+      "code": "not_found",
+      "mutation": "GET /v1/snapshot",
+      "name": "get_snapshot",
+      "status": 404
+    },
+    {
+      "authority_mutation": false,
+      "code": "not_found",
+      "mutation": "POST /v1/control",
+      "name": "post_control",
+      "status": 404
+    },
+    {
+      "authority_mutation": false,
+      "code": "headers_too_large",
+      "mutation": "Header block length 8193 bytes",
+      "name": "oversized_headers",
+      "status": 431
+    },
+    {
+      "authority_mutation": false,
+      "code": "headers_too_large",
+      "mutation": "33 fields",
+      "name": "too_many_headers",
+      "status": 431
+    },
+    {
+      "authority_mutation": false,
+      "code": "headers_too_large",
+      "mutation": "One header line 2049 bytes including CRLF",
+      "name": "oversized_header_line",
+      "status": 431
+    },
+    {
+      "authority_mutation": false,
+      "code": "bad_request",
+      "mutation": "Header continuation line starts SP",
+      "name": "folded_header",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "invalid_json",
+      "mutation": "Authorized valid framing; body {",
+      "name": "bad_json",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "invalid_json",
+      "mutation": "Authorized JSON has repeated schema_version",
+      "name": "duplicate_json_key",
+      "status": 400
+    },
+    {
+      "authority_mutation": false,
+      "code": "unsupported_schema",
+      "mutation": "Authorized body schema_version 2",
+      "name": "unsupported_version",
+      "status": 422
+    },
+    {
+      "authority_mutation": false,
+      "code": "invalid_schema",
+      "mutation": "Authorized body adds trusted_producer field",
+      "name": "extra_body_field",
+      "status": 422
+    },
+    {
+      "authority_mutation": false,
+      "code": "idempotency_conflict",
+      "mutation": "After commit, reuse ID with changed canonical observation",
+      "name": "same_id_changed_body",
+      "status": 409
+    },
+    {
+      "authority_mutation": false,
+      "code": "idempotency_conflict",
+      "mutation": "After commit, reuse sequence with new event ID",
+      "name": "same_tuple_new_id",
+      "status": 409
+    },
+    {
+      "authority_mutation": false,
+      "code": "sequence_gap",
+      "mutation": "Schema-valid unknown event sequence above head",
+      "name": "future_sequence",
+      "status": 409
+    },
+    {
+      "authority_mutation": false,
+      "code": "detector_kind_conflict",
+      "mutation": "Next expected event changes existing detector kind",
+      "name": "detector_kind",
+      "status": 409
+    },
+    {
+      "authority_mutation": false,
+      "code": "request_timeout",
+      "mutation": "Partial body stalls idle >2 seconds; close also permitted",
+      "name": "read_timeout",
+      "status": 408
+    },
+    {
+      "authority_mutation": false,
+      "code": "storage_unavailable",
+      "mutation": "Real SQLite lock timeout while ingesting",
+      "name": "storage_busy",
+      "status": 503
+    }
+  ],
+  "error_status": {
+    "bad_request": 400,
+    "detector_kind_conflict": 409,
+    "fenced": 403,
+    "headers_too_large": 431,
+    "idempotency_conflict": 409,
+    "internal_error": 500,
+    "invalid_json": 400,
+    "invalid_schema": 422,
+    "length_required": 411,
+    "method_not_allowed": 405,
+    "not_found": 404,
+    "oversized": 413,
+    "request_timeout": 408,
+    "sequence_exhausted": 409,
+    "sequence_gap": 409,
+    "stale_sequence": 409,
+    "storage_unavailable": 503,
+    "unauthenticated": 401,
+    "unauthorized": 403,
+    "unsupported_media_type": 415,
+    "unsupported_schema": 422
+  },
+  "expected_case_count": 38,
+  "note": "Static expected vectors, not executed HTTP. Begin with valid POST/Host/Content-Length/type/token and schema-valid body; apply mutation. Parent harness materializes real raw requests. Deadline/socket closure can prevent a response.",
+  "revision": "incident-slice-2-r1",
+  "synthetic": true
+}
