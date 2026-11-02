@@ -1,0 +1,91 @@
+{
+  "acceptance_scenarios": [
+    "happy_restart",
+    "lost_ack_after_commit",
+    "auth_and_assignment",
+    "conflict_order",
+    "request_boundaries",
+    "ack_and_egress",
+    "quarantine_fairness",
+    "startup_shutdown_storage"
+  ],
+  "assignments": {
+    "camera-a": {
+      "assignment_generation": 1,
+      "producer_id": "producer-a"
+    },
+    "camera-b": {
+      "assignment_generation": 1,
+      "producer_id": "producer-b"
+    }
+  },
+  "expected_fixture_lines": 2,
+  "invalid_origins": [
+    "http://localhost:12345",
+    "http://127.1:12345",
+    "http://2130706433:12345",
+    "http://[::1]:12345",
+    "http://0.0.0.0:12345",
+    "http://192.168.1.1:12345",
+    "http://127.0.0.1",
+    "http://127.0.0.1:0",
+    "http://127.0.0.1:65536",
+    "http://127.0.0.1:0123",
+    "https://127.0.0.1:12345",
+    "http://a@127.0.0.1:12345",
+    "http://127.0.0.1:12345/",
+    "http://127.0.0.1:12345?q=x",
+    "http://127.0.0.1:12345#x",
+    "http://127.0.0.1:12345\n"
+  ],
+  "receiver_config": {
+    "assignments_path": "/absolute/assignments.json",
+    "db_path": "/absolute/incident.sqlite",
+    "fake_credentials_path": "/absolute/receiver-credentials.json",
+    "listen_host": "127.0.0.1",
+    "listen_port": 0,
+    "schema_version": 1,
+    "synthetic": true
+  },
+  "receiver_credentials": {
+    "schema_version": 1,
+    "synthetic": true,
+    "tokens": {
+      "slice2-dummy-a-not-secret": {
+        "camera_ids": [
+          "camera-a"
+        ],
+        "producer_id": "producer-a"
+      },
+      "slice2-dummy-b-not-secret": {
+        "camera_ids": [
+          "camera-b"
+        ],
+        "producer_id": "producer-b"
+      }
+    }
+  },
+  "revision": "incident-slice-2-r1",
+  "sender_assignments": {
+    "camera-a": {
+      "assignment_generation": 1,
+      "producer_id": "producer-a"
+    }
+  },
+  "sender_config": {
+    "assignments_path": "/absolute/assignments.json",
+    "db_path": "/absolute/spool.sqlite",
+    "fake_credentials_path": "/absolute/sender-credential.json",
+    "fixture_path": "/absolute/synthetic.jsonl",
+    "origin": "http://127.0.0.1:12345",
+    "schema_version": 1,
+    "synthetic": true
+  },
+  "sender_credentials": {
+    "producer_id": "producer-a",
+    "schema_version": 1,
+    "synthetic": true,
+    "token": "slice2-dummy-a-not-secret"
+  },
+  "synthetic": true
+}

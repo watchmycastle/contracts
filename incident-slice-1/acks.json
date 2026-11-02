@@ -1,0 +1,306 @@
+{
+  "invalid": [
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000012",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_event_id"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "wrong-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_producer_id"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-b",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_camera_id"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 2,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_assignment_generation"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_payload_sha256"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": false,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_durable"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 2,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_accepted_sequence"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 3,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_next_expected_sequence"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 2
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_schema_version"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "queued",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "wrong_disposition"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": 1,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "integer_durable"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": true,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "bool_generation"
+    },
+    {
+      "ack": {
+        "accepted_sequence": true,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "bool_sequence"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "missing_hash"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "extra": "forbidden",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet",
+      "name": "extra_field"
+    }
+  ],
+  "valid": [
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 1,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "duplicate",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000014",
+        "next_expected_sequence": 2,
+        "payload_sha256": "531848462a4a9ca8db2d9b8a56ec353067bada24291a51db1eb15291568ec9b3",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "fresh_quiet"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 3,
+        "assignment_generation": 1,
+        "camera_id": "camera-demo-a",
+        "disposition": "accepted",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000003",
+        "next_expected_sequence": 4,
+        "payload_sha256": "39db4e3066e6c1b4a433f035b5965fbe0837c08271d4047e099d2863b470ee61",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "motion_trigger"
+    },
+    {
+      "ack": {
+        "accepted_sequence": 9007199254740990,
+        "assignment_generation": 9007199254740991,
+        "camera_id": "camera-demo-a",
+        "disposition": "duplicate",
+        "durable": true,
+        "event_id": "00000000-0000-4000-8000-000000000028",
+        "next_expected_sequence": 9007199254740991,
+        "payload_sha256": "06f34b1964e00ac9baa450459dbd029d7f20526d5c2f0176174a2a401f57a41e",
+        "producer_id": "synthetic-agent",
+        "schema_version": 1
+      },
+      "event": "last_sequence"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "revision": "incident-slice-1-r1",
+  "scenarios": [
+    {
+      "name": "initial-active-grouping",
+      "steps": [
+        {
+          "baseline_active": true,
+          "count": 0,
+          "event": "initial_active",
+          "outbox_count": 0
+        },
+        {
+          "armed": true,
+          "count": 0,
+          "event": "quiet_baseline",
+          "outbox_count": 0
+        },
+        {
+          "count": 1,
+          "desired_version": 1,
+          "event": "motion_trigger",
+          "outbox_count": 1
+        },
+        {
+          "count": 1,
+          "event": "repeated_active",
+          "outbox_count": 1
+        },
+        {
+          "count": 1,
+          "event": "sound_baseline",
+          "outbox_count": 1
+        },
+        {
+          "count": 2,
+          "detection_types": [
+            "motion",
+            "sound"
+          ],
+          "event": "sound_trigger",
+          "outbox_count": 2
+        },
+        {
+          "count": 2,
+          "event": "quiet_does_not_resolve",
+          "outbox_count": 2
+        },
+        {
+          "armed": false,
+          "count": 2,
+          "event": "replay_invalidates",
+          "outbox_count": 2
+        },
+        {
+          "count": 2,
+          "event": "unarmed_active",
+          "outbox_count": 2
+        },
+        {
+          "count": 2,
+          "event": "quiet_again",
+          "outbox_count": 2
+        },
+        {
+          "count": 3,
+          "event": "motion_again",
+          "last_detection_at": "2026-10-15T00:00:06Z",
+          "outbox_count": 3
+        },
+        {
+          "ack_next_expected_sequence": 4,
+          "camera_next_sequence": 12,
+          "count": 3,
+          "disposition": "duplicate",
+          "event": "motion_trigger",
+          "outbox_count": 3
+        }
+      ]
+    },
+    {
+      "name": "uncertain-cannot-arm",
+      "steps": [
+        {
+          "armed": true,
+          "count": 0,
+          "event": "fresh_quiet"
+        },
+        {
+          "armed": false,
+          "count": 0,
+          "event": "uncertain_quiet"
+        },
+        {
+          "baseline_active": true,
+          "count": 0,
+          "event": "active_after_uncertain"
+        }
+      ]
+    },
+    {
+      "name": "new-session-invalidates",
+      "steps": [
+        {
+          "armed": true,
+          "count": 0,
+          "event": "fresh_quiet"
+        },
+        {
+          "baseline_active": true,
+          "count": 0,
+          "event": "session_active"
+        },
+        {
+          "armed": true,
+          "count": 0,
+          "event": "session_quiet"
+        },
+        {
+          "count": 1,
+          "event": "session_trigger",
+          "outbox_count": 1
+        }
+      ]
+    },
+    {
+      "name": "contextual-errors-no-effects",
+      "steps": [
+        {
+          "camera_next_sequence": 2,
+          "count": 0,
+          "event": "fresh_quiet"
+        },
+        {
+          "error": "idempotency_conflict",
+          "event": "id_conflict"
+        },
+        {
+          "error": "idempotency_conflict",
+          "event": "tuple_conflict"
+        },
+        {
+          "error": "sequence_gap",
+          "event": "sequence_gap",
+          "expected_sequence": 2
+        },
+        {
+          "error": "fenced",
+          "event": "fenced"
+        },
+        {
+          "error": "detector_kind_conflict",
+          "event": "kind_conflict"
+        },
+        {
+          "camera_next_sequence": 2,
+          "disposition": "duplicate",
+          "event": "fresh_quiet"
+        }
+      ]
+    },
+    {
+      "name": "camera-isolation",
+      "steps": [
+        {
+          "count": 0,
+          "event": "fresh_quiet",
+          "outbox_count": 0
+        },
+        {
+          "count": 0,
+          "event": "b_quiet",
+          "outbox_count": 0
+        },
+        {
+          "count": 1,
+          "desired_version": 1,
+          "event": "b_active",
+          "outbox_count": 1
+        },
+        {
+          "count": 0,
+          "event": "initial_active_after_quiet",
+          "outbox_count": 1
+        }
+      ]
+    },
+    {
+      "name": "unknown-is-not-clear",
+      "steps": [
+        {
+          "armed": true,
+          "count": 0,
+          "event": "fresh_quiet"
+        },
+        {
+          "armed": false,
+          "count": 0,
+          "event": "unknown"
+        },
+        {
+          "count": 0,
+          "event": "active_after_uncertain"
+        }
+      ]
+    },
+    {
+      "name": "resync-active-is-not-trigger",
+      "steps": [
+        {
+          "armed": true,
+          "count": 0,
+          "event": "fresh_quiet"
+        },
+        {
+          "baseline_active": true,
+          "count": 0,
+          "event": "resync_active_after_quiet"
+        }
+      ]
+    }
+  ],
+  "synthetic": true
+}

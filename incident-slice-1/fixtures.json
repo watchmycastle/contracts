@@ -1,0 +1,17 @@
+{
+  "expected_counts": {
+    "invalid_acks": 15,
+    "invalid_events": 36,
+    "scenarios": 7,
+    "valid_acks": 4,
+    "valid_events": 29
+  },
+  "files": {
+    "acks": "acks.json",
+    "invalid_events": "invalid-events.json",
+    "scenarios": "scenarios.json",
+    "valid_events": "valid-events.json"
+  },
+  "revision": "incident-slice-1-r1",
+  "synthetic": true
+}
